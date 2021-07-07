@@ -18,7 +18,7 @@ update(state){
 
 async start(){
     if(gameState === 0){
-        contestant = new contestant;
+        contestant = new Contestant;
     //read the value once
       var contestantCountRef = await database.ref('contestantCount').once("value");
       if(contestantCountRef.exists()){
