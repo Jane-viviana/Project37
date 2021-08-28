@@ -1,9 +1,10 @@
 class Contestant{
     constructor(){
      this.index = null;
-     this.distance = 0;
+    // this.distance = 0;
      this.name = null;
-     this.rank = 0;
+     //this.rank = 0;
+     this.answer = 0;
     }
 
  getCount(){
@@ -34,7 +35,7 @@ class Contestant{
     })
   }
 
-  readRank(){
+  /*readRank(){
     var rankref = database.ref('Rank');
     rankref.on('value',(data)=>{
       this.rank = data.val();
@@ -46,5 +47,5 @@ class Contestant{
     database.ref('/').update({
       Rank:rank
     })
-  }
+  }*/
 }
